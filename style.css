@@ -59,6 +59,9 @@ header{
   left:0;
    
 }
+#back{
+    display: none;
+}
 #mobile{
     display: none;
     align-items: center;
@@ -931,8 +934,9 @@ padding-top: 15px;
 }
 /************start media query******/
 @media(max-width:799px){
+   
     
-        nav ul ,#navbar {
+        nav ul , #navbar {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -946,7 +950,15 @@ padding-top: 15px;
         box-shadow: 0px 40px 60px rgba(0,0,0, 0.1);
         gap:10px;
         padding: 20px;
+        transition: 0.3s;
     }
+    #back {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        z-index: 10;
+    }
+
     nav ul li{
         margin-bottom: 25px;
     }
@@ -960,7 +972,289 @@ padding-top: 15px;
         font-size: 24px;
         padding-left: 20px;
     }
+    .hero {
+
+      height: 70vh;
+      padding: 10px 80px;
+      background-position: top 30% right 30%;
+    }
+    #feacher {
+       
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:20px;
+        
+    }
+    .fe-box {
+        width: 150px;
+      
+    }
+    .fe-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .feacher-product .cart1 {
+   margin: 15px;
+   width: 40%;
+
+    }
+    .feacher-product a {
+      padding: 5px;
+    }
+    
+    #banner{
+        height:20vh;
+    }
+    #sec-banner {
+     
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin:35px;
+        gap: 20px;
+    }
+    .banner-box {
+       min-width: 85%;
+       height: 30vh;
+    }
+    #tird-banner {
+        display: flex;
+        justify-content: space-between;
+   flex-wrap: wrap;
+        align-items: center;
+        padding: 20px 35px 20px 35px;
+    }
+    .t-banner {
+        display: flex;
+        align-items: flex-start;
+        justify-content:flex-start;
+        flex-direction: column;
+        background-image: url(./banner/black-friday-elements-assortment\(1\).jpg);
+        background-position: center;
+        background-size: cover;
+        width: 220px;
+        min-width: 20%;
+        height: 250px;
+        padding-left: 5px;
+    }
+    .t-banner h2 {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 900;
+    }
+    .t-banner h3{
+        font-size: 15px;
+    }
+    .search-option {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        background-color: blue;
+    }
+    .form {
+        margin:0px 0 40px 100px;
+    }
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center ;
+        padding: 30px 50px 0 50px;
+        text-align: center;
+    }
+    .fir-div p {
+        text-align: start;
+        font-size: 10px;
+        font-weight: 300px;
+        margin-top: 20px;
+        font-style: italic;
+    }
+    .fir-div {
+        text-align:start;
+    }
 }
+@media(max-width:740px){
+    #tird-banner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px 35px 20px 35px;
+        gap: 20px;
+    }
+    .t-banner {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-image: url(./banner/black-friday-elements-assortment\(1\).jpg);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        min-width: 20%;
+        height: 250px;
+        padding-left: 5px;
+        gap:20px;
+    }
+}
+@media(max-width:477px){
+    header{
+        padding: 10px 30px;
+    }
+    .hero{
+        padding:0 20px ; 
+    }
+    .hero h2{
+        font-size: 28px;
+    }
+     .hero h1 {
+        font-size: 40px;
+        line-height: 31px;
+        color: #222;
+      }
+      #feacher {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 02px;
+    }
+      .fe-box {
+        width: 100px;
+    }
+    .feacher-product .cart1 {
+        margin: 15px;
+        width: 100%;
+    }
+    #banner {
+        height: 40vh;
+    }
+      #par {
+        margin-left: 4px;
+    }
+    p {
+        font-size: 14px;
+        color: #465b46;
+        margin: 15px 0 0px 0;
+    }
+    #but {
+        margin-left: 50px;
+        border-radius: .5rem;
+        padding: 8px;
+        background-color: #41c741;
+        border-color: black;
+    }
+    #sec-banner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 25px 0 0 25px;
+        gap: 20px;
+    }
+    #banner h4 {
+        color: #cce7d0;
+        font-size: 15px;
+    }
+    #banner h2 {
+        color: #cce7d0;
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 46px;
+        line-height: 31px;
+        color: #222;
+    }
+    .banner-box2 {
+        background-image: url(./banner/black-tshirt-with-light-background.jpg);
+        background-size: cover;
+    }
+    .banner-box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(./banner/black-friday-elements-assortment\(1\).jpg);
+        background-size: cover;
+      background-position: center;
+        width: 280px;
+        height: 300px;
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+    .banner-box h4{
+        font-size: 15px;
+    }
+    #sec-banner h2 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 800;
+    }
+  
+    #sec-banner button {
+        border: none;
+        outline: none;
+        font-size: 16px;
+        padding: 15px 30px;
+        color: #fff;
+        border-radius: 4px;
+        background-color: transparent;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.2s;
+        border: 1px solid #fff;
+        margin-top: 10px;
+        margin: 10px 0 0 20px;
+    }
+
+    .search-option .news h4 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 10px;
+    }
+    .search-option .news {
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+    }
+    .form {
+        margin: 0px 0 40px 05px;
+    }
+    .search-option .news p {
+        color: #fff;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    .fir-div {
+        
+      text-align: start;
+    }
+    .banner-box {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(./banner/black-friday-elements-assortment\(1\).jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 307px;
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+}
+@media(max-width:362px){
+    .fe-box {
+        width: 213px;
+    }
+}
+
 
 
   
